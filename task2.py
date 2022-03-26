@@ -1,42 +1,40 @@
-from math import sqrt
 
+# from math import *
 
-class Namenum:
-    def __init__(self,count):  
-        self._count = count
-    
-    def count(self):
-          if sqrt(self._count) < 5:
-            return 'Yes'
-          else:
-            return 'No'   
-   
-    def numbersstr(self,name):
-           self._name1 = name
-           for i in self._name1:
-            if self._name1 == ('a' ,'j' , 's'):
-                return  i == 1
-            if self._name1 == ('b','k' ,'t'):
-                return i == 2
-            if self._name1 == ('c','l','u'):
-               return i == 3
-            if self._name1 == ('d','m','v'):
-                return  i == 4
-            if self._name1 == ('e', 'n', 'w'):
-                return i == 5
-            if self._name1 == ('f' , 'o' , 'x'):
-                return i == 6
-            if self._name1 == ('g','p' ,'y'):
-                return i == 7
-            if self._name1 == ('h', 'q','z'):
-                return i == 8
-           if self._name1 == ('i', 'r'):
-             return i == 9
-           self._name1 += int(i)
-           self._count = self._name1
-           return self._count
-name = input('Enter your name please--> ')
-name1 = name.lower()
-y = Namenum(name1)
-print(y._count)
-print(y.count())
+# class Name:
+#     def __init__(self,name):
+#         self.name = name
+                
+#     def tab(self):
+#         sum = 0
+#         self.name = self.name.lower()
+#         for i in self.name:
+#             if i == 'a' or i == 'j' or i == 's':
+#                 sum += 1
+#             elif i == 'b' or i == 'k' or i =='t':
+#                 sum += 2
+#             elif i == 'c' or i == 'l' or i == 'u':
+#                 sum += 3
+#             elif i == 'd' or i == 'm' or i == 'v':
+#                 sum += 4
+#             elif i == 'e' or i == 'n' or i ==  'w':
+#                 sum += 5
+#             elif i == 'f' or i == 'o' or i == 'x':
+#                 sum += 6
+#             elif i == 'g' or i == 'p' or i == 'y':
+#                 sum += 7
+#             elif i == 'h' or i == 'q' or i == 'z':
+#                 sum += 8
+#             elif i == 'i' or i == 'r':
+#                 sum += 9
+#         return sum
+#     def result(self,sum =0):
+#         if sqrt(sum) < 5:
+#            return 'Yes'
+#         else:
+#            return'No'
+
+# name = input('Enter name --> ')
+# x = Name(name)
+# print(x.tab())
+# print(x.result())
